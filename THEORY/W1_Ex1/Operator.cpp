@@ -32,15 +32,15 @@ Fraction Fraction::operator / (const Fraction& a) {
 
 std::istream& operator >> (std::istream& in, Fraction& a) {
 	std::cout << "Nhap tu so " << a.dem << ": ";
-	std::cin >> a.tuSo;
+	in >> a.tuSo;
 	std::cout << "Nhap mau so " << a.dem << ": ";
-	std::cin >> a.mauSo;
+	in >> a.mauSo;
 	a.dem++;
 	return in;
 }
 
 std::ostream& operator << (std::ostream& out, const Fraction& a) {
-	std::cout << a.tuSo << "/" << a.mauSo;
+	out << a.tuSo << "/" << a.mauSo;
 	return out;
 }
 

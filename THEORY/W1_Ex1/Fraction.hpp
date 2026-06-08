@@ -7,7 +7,7 @@
 class Fraction {
 private:
 	int tuSo, mauSo;
-	int static dem;
+	static int dem;
 public:
 	void reduction();
 	void quyDongHaiPhanSo(Fraction& a);

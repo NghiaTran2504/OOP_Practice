@@ -18,12 +18,15 @@
     <ClCompile Include="mainProg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ps.cpp">
+    <ClCompile Include="myArr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ps.hpp">
+    <ClInclude Include="myArr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

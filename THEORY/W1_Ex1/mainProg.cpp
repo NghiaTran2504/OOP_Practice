@@ -2,7 +2,7 @@
 
 int main() {
 	Fraction a, b;
-	std::cout << "Moi cau chu nhap hai phan so!\n";
+	std::cout << "Moi thay nhap hai phan so!\n";
 	std::cin >> a >> b;
 	a.resetDem();
 
