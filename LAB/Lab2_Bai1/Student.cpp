@@ -39,7 +39,7 @@ bool Student::checkValidInfo(const std::string& s) {
 		else {
 			for (int i = 0; i < fullName.size(); ++i) {
 				char c = tolower(fullName[i]);
-				if (c != ' ' && (c - 'a' >= 24 || c - 'a' < 0)) return false;
+				if (c != ' ' && (c - 'a' >= 26 || c - 'a' < 0)) return false;
 			}
 		}
 
