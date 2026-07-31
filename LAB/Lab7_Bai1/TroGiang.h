@@ -9,7 +9,7 @@ public:
 	// CONSTRUCTOR
 	TroGiang() = default;
 	~TroGiang() = default;
-	TroGiang(string name, string dob, string id, int n) : NhanSu(name, dob, id), numSubjectAssist(n) {}
+	TroGiang(string name, string dob, string id, double salary, int n) : NhanSu(name, dob, id, salary), numSubjectAssist(n) {}
 
 	// HELPER FUNCTION
 	double calculateSalary() override;

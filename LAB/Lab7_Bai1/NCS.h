@@ -6,10 +6,11 @@
 class NCS : public NhanSu {
 private:
 	vector <string> projectsID;
-	int yearWorking;
+	int yearWorking = 0;
 public:
 	// CONSTRUCTOR
 	NCS() = default;
+	NCS(string name, string dob, string id, double salary, int year) : NhanSu(name, dob, id, salary), yearWorking(year) {}
 	~NCS() {
 		projectsID.clear();
 	}

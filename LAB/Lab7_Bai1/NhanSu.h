@@ -15,7 +15,7 @@ private:
 public:
 	// CONSTRUCTOR
 	NhanSu() = default;
-	NhanSu(string _name, string _dob, string _id) : name(_name), dob(_dob), id(_id) {}
+	NhanSu(string _name, string _dob, string _id, double _salary) : name(_name), dob(_dob), id(_id), salary(_salary) {}
 	virtual ~NhanSu() = default;
 	string getName() const { return this->name; }
 	string getDob() const { return this->dob; }

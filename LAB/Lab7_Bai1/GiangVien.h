@@ -12,7 +12,7 @@ private:
 public:
 	// CONSTRUCTOR, DESTRUCTOR
 	GiangVien() = default;
-	GiangVien(string name, string dob, string id, string a, string b, int year) : NhanSu(name, dob, id), hocHam(a), hocVi(b), yearTeaching(year) {}
+	GiangVien(string name, string dob, string id, string a, string b, double salary, int year) : NhanSu(name, dob, id, salary), hocHam(a), hocVi(b), yearTeaching(year) {}
 	virtual ~GiangVien() {
 		yearTeaching = 0;
 		listSubject.clear();

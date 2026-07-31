@@ -1,69 +1,16 @@
-// ===== NỘI DUNG TỪ FILE: GiangVien.h =====
-GiangVien
---
-- hocHam: string
-- hocVi: string
-- yearTeaching: int= 0
-- vector <string> listSubject
---
-+ GiangVien() = default
-+ GiangVien(name: string, dob: string, id: string, a: string, b: string, year: int)
-+ virtual ~GiangVien()
-+ getHocHam(): string const
-+ getHocVi(): string const
-+ getYearTeaching(): int const
-+ getListSubject(): vector <string> const
-+ setHocHam(s: string): void
-+ setHocVi(s: string): void
-+ setYearTeaching(n: int): void
-+ setListSubject(n: int): void
-+ calculateSalary(): double
-+ nhap(inDev: istream&): void
-+ xuat(outDev: ostream&): void
-
-
 // ===== NỘI DUNG TỪ FILE: NCS.h =====
 NCS
 --
 - vector <string> projectsID
-- yearWorking: int
+- yearWorking: int= 0
 --
 + NCS() = default
++ NCS(name: string, dob: string, id: string, salary: double, year: int)
 + ~NCS()
 + calculateSalary(): double
 + numProjects(): int
 + nhap(inDev: istream&): void
 + xuat(outDev: ostream&): void
-
-
-// ===== NỘI DUNG TỪ FILE: NhanSu.h =====
-NhanSu
---
-- name: string
-- dob: string
-- id: string
-- salary: double= 0
-+ inDev: return
---
-+ NhanSu() = default
-+ NhanSu(_name: string, _dob: string, _id: string)
-+ virtual ~NhanSu() = default
-+ getName(): string const
-+ getDob(): string const
-+ getId(): string const
-+ getSalary(): double const
-+ setName(s: string): void
-+ setDob(s: string): void
-+ setId(s: string): void
-+ setSalary(s: double): void
-+ calculateSalary(): virtual double
-+ totalSalary(list: const vector <NhanSu*>&): static double
-+ clearMemory(list: vector <NhanSu*>&): static void
-+ pushList(inDev: istream&, list: vector <NhanSu*>&, s: string&): static void
-+ chuanHoa(s: string&): static void
-+ nhap(in: istream&): virtual void
-+ xuat(out: ostream&): virtual void const
-+ obj.nhap(inDev)
 
 
 // ===== NỘI DUNG TỪ FILE: Specialist.h =====
@@ -73,22 +20,10 @@ Specialist
 - yearWorking: int= 0
 --
 + Specialist() = default
++ Specialist(name: string, dob: string, id: string, salary: double, year: int)
 + ~Specialist()
 + calculateSalary(): double
 + numProjects(): int
-+ nhap(inDev: istream&): void
-+ xuat(outDev: ostream&): void
-
-
-// ===== NỘI DUNG TỪ FILE: TroGiang.h =====
-TroGiang
---
-- numSubjectAssist: int= 0
---
-+ TroGiang() = default
-+ ~TroGiang() = default
-+ TroGiang(name: string, dob: string, id: string, n: int)
-+ calculateSalary(): double
 + nhap(inDev: istream&): void
 + xuat(outDev: ostream&): void
 
