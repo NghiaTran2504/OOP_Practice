@@ -24,10 +24,10 @@
     <ClInclude Include="TroGiang.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NCS.h">
+    <ClInclude Include="Specialist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Specialist.h">
+    <ClInclude Include="Researcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClCompile Include="TroGiang.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NCS.cpp">
+    <ClCompile Include="Specialist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Specialist.cpp">
+    <ClCompile Include="Researcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

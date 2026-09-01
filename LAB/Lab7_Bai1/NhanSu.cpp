@@ -1,7 +1,7 @@
 ﻿#include "NhanSu.h"
 #include "GiangVien.h"
 #include "TroGiang.h"
-#include "NCS.h"
+#include "Researcher.h"
 #include "Specialist.h"
 
 // HELPER FUNCTIONS
@@ -33,8 +33,8 @@ void NhanSu::pushList(istream& inDev, vector <NhanSu*>& list, string& s) {
 		list.push_back(p);
 		inDev >> *p;
 	}
-	else if (s == "nghien cuu sinh") {
-		NhanSu* p = new NCS;
+	else if (s == "nghien cuu vien") {
+		NhanSu* p = new Researcher;
 		list.push_back(p);
 		inDev >> *p;
 	}
@@ -72,7 +72,7 @@ istream& operator >> (istream& inDev, vector <NhanSu*>& listNhanSu) {
 	int n; inDev >> n;
 	for (int i = 0; i < n; ++i) {
 		string s;
-		cout << "Role of person " << i + 1 << " (giang vien/tro giang/nghien cuu sinh/chuyen vien): ";
+		cout << "Role of person " << i + 1 << " (giang vien/tro giang/nghien cuu vien/chuyen vien): ";
 		getline(inDev >> ws, s);
 		NhanSu::chuanHoa(s);
 		NhanSu::pushList(inDev, listNhanSu, s);

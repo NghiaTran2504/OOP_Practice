@@ -124,16 +124,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="GiangVien.h" />
-    <ClInclude Include="NCS.h" />
     <ClInclude Include="NhanSu.h" />
+    <ClInclude Include="Researcher.h" />
     <ClInclude Include="Specialist.h" />
     <ClInclude Include="TroGiang.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GiangVien.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="NCS.cpp" />
     <ClCompile Include="NhanSu.cpp" />
+    <ClCompile Include="Researcher.cpp" />
     <ClCompile Include="Specialist.cpp" />
     <ClCompile Include="TroGiang.cpp" />
   </ItemGroup>

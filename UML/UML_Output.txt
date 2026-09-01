@@ -1,30 +1,73 @@
-// ===== NỘI DUNG TỪ FILE: NCS.h =====
-NCS
+// ===== NỘI DUNG TỪ FILE: Component.h =====
+DriveComponent
 --
-- vector <string> projectsID
-- yearWorking: int= 0
+# name: string
++ inDev: return
 --
-+ NCS() = default
-+ NCS(name: string, dob: string, id: string, salary: double, year: int)
-+ ~NCS()
-+ calculateSalary(): double
-+ numProjects(): int
-+ nhap(inDev: istream&): void
-+ xuat(outDev: ostream&): void
++ DriveComponent() = default
++ virtual ~DriveComponent() = default
++ DriveComponent& operator = (obj: const DriveComponent&) = default
++ Clone(): virtual DriveComponent*
++ GetName(): virtual string
++ GetSize(): virtual double
++ AddComponent(obj: DriveComponent*): virtual bool
++ RemoveComponent(name: string): virtual bool
++ Nhap(inDev: istream&): virtual void
++ Xuat(outDev: ostream&, level: int = 0): virtual void
++ obj.Nhap(inDev)
 
 
-// ===== NỘI DUNG TỪ FILE: Specialist.h =====
-Specialist
+// ===== NỘI DUNG TỪ FILE: Composite.h =====
+DriveComposite
 --
-- vector <string> projectsID
-- yearWorking: int= 0
+# vector <DriveComponent*> compositeContent
 --
-+ Specialist() = default
-+ Specialist(name: string, dob: string, id: string, salary: double, year: int)
-+ ~Specialist()
-+ calculateSalary(): double
-+ numProjects(): int
-+ nhap(inDev: istream&): void
-+ xuat(outDev: ostream&): void
++ DriveComposite() = default
++ virtual ~DriveComposite()
++ Clone(): virtual DriveComponent*
++ DriveComposite(obj: const DriveComposite&)
++ DriveComposite& operator = (obj: const DriveComposite&)
++ GetName(): string
++ GetSize(): double
++ AddComponent(obj: DriveComponent*): bool
++ RemoveComponent(name: string): bool
++ Nhap(inDev: istream&): void
++ Xuat(outDev: ostream&, level: int = 0): void
+
+
+// ===== NỘI DUNG TỪ FILE: File.h =====
+File
+--
+- size: double= 0
+--
++ File() = default
++ ~File() = default
++ Clone(): DriveComponent*
++ GetName(): string
++ GetSize(): double
++ Nhap(inDev: istream&): void
++ Xuat(outDev: ostream&, level: int = 0): void
+
+
+// ===== NỘI DUNG TỪ FILE: Folder.h =====
+Folder
+--
+
+--
++ Folder() = default
++ Clone(): DriveComponent*
++ Nhap(inDev: istream&): void
++ Xuat(outDev: ostream&, level: int = 0): void
+
+
+// ===== NỘI DUNG TỪ FILE: HardDisk.h =====
+HardDisk
+--
+
+--
++ HardDisk() = default
++ Clone(): DriveComponent*
++ Nhap(inDev: istream&): void
++ Xuat(outDev: ostream &, level: int = 0): void
 
 
